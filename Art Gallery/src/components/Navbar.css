@@ -1,7 +1,7 @@
 /* General Navbar Styles */
 .navbar {
     background-color: white;
-    padding: 10px 20px;
+    padding: 20px 10px; /* Top and bottom padding */
     border-bottom: 1px solid #eaeaea;
     position: relative;
 }
@@ -9,6 +9,8 @@
 .navbar-top {
     display: flex;
     align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     justify-content: space-between;
     position: relative;
 }
@@ -28,6 +30,7 @@
     right: 20%;
 }
 
+
 .navbar-logo {
     font-family: 'Brush Script MT', cursive;
     font-size: 36px;
@@ -39,7 +42,7 @@
 
 .navbar-links-container {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 20px; /* Increased margin for spacing */
 }
 
 .navbar-links {
@@ -56,6 +59,7 @@
 
 .navbar-links li {
     cursor: pointer;
+    padding-right: 0.5rem;
 }
 
 .navbar-links li:hover {
@@ -86,6 +90,7 @@
 @media (max-width: 768px) {
     .navbar-top {
         justify-content: center;
+        padding: 10px 0; /* Adjusted padding for smaller screens */
     }
 
     .navbar-icon-left,
@@ -97,7 +102,7 @@
         display: block;
         position: absolute;
         top: 10px;
-        right: 20px;
+        right: 10px;
         cursor: pointer;
     }
 
@@ -122,7 +127,7 @@
         align-items: center;
         background-color: white;
         position: absolute;
-        top: 60px;
+        top: 60px; /* Adjusted to ensure space for the menu icon */
         left: 0;
         width: 100%;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -130,6 +135,23 @@
     }
 
     .navbar-links li {
-        padding: 10px 0;
+        padding: 15px 20px; /* Increased padding for better touch targets */
+        font-size: 18px; /* Slightly larger text for readability */
+    }
+}
+
+/* Additional responsive adjustments */
+@media (max-width: 480px) {
+    .navbar-logo {
+        font-size: 28px; /* Adjust logo size for very small screens */
+    }
+
+    .navbar-links {
+        font-size: 16px; /* Adjust font size for better fit */
+    }
+
+    .navbar-menu-icon {
+        top: 8px; /* Adjusted for very small screens */
+        right: 8px; /* Adjusted for very small screens */
     }
 }

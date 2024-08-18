@@ -1,17 +1,15 @@
 import React from 'react'
-import { useContext, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import './Header.css';
 
 function Header() {
-  return (
-    <header>
-        
-      <Link to='/' className='logo'>The Art Gallery</Link>
-      <nav>
-           
-      </nav>
-    </header>
-  )
-}
+ 
+      return (
+        <>
+    <div className="heading-container">
+      <h2 className="heading-text">A curated selection of exceptional art by emerging talent.</h2>
+    </div>
+    </>
+  );
+};
 
 export default Header

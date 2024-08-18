@@ -1,0 +1,20 @@
+/* Import the font family */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100;200;300;400;500;600;700&display=swap');
+
+.heading-container {
+    text-align: center;
+    padding: 20px; /* Adjust padding as needed */
+    background-color: white; /* Set background color to white */
+  }
+  
+  .heading-text {
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 2rem; /* Adjust size as needed */
+    font-weight: 400; /* Adjust weight as needed */
+    color: #333; /* Adjust color as needed */
+    margin: 0 auto; /* Center the element */
+    max-width: 50%; /* Limit width to 50% */
+    text-align: center; /* Center text within the container */
+  }
+  
+  
