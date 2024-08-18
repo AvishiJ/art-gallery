@@ -16,5 +16,17 @@
     max-width: 50%; /* Limit width to 50% */
     text-align: center; /* Center text within the container */
   }
+
+  .subheading-text{
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 1.5rem; /* Adjust size as needed */
+    font-weight: 400; /* Adjust weight as needed */
+    color: #333; /* Adjust color as needed */
+    margin: 0 auto; /* Center the element */
+    max-width: 50%; /* Limit width to 50% */
+    text-align: center; /* Center text within the container */
+    padding-top: 4%;
+    padding-bottom: 3%;
+  }
   
   
