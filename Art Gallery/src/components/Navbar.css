@@ -1,0 +1,135 @@
+/* General Navbar Styles */
+.navbar {
+    background-color: white;
+    padding: 10px 20px;
+    border-bottom: 1px solid #eaeaea;
+    position: relative;
+}
+
+.navbar-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* Mirror and Heart Icons Equal Distance from Logo */
+.navbar-icon-left, .navbar-icon-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navbar-icon-left {
+    left: 20%;
+}
+
+.navbar-icon-right {
+    right: 20%;
+}
+
+.navbar-logo {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 36px;
+    color: #263245;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 1;
+}
+
+.navbar-links-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.navbar-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #4a4a4a;
+}
+
+.navbar-links li {
+    cursor: pointer;
+}
+
+.navbar-links li:hover {
+    color: #263245;
+}
+
+.navbar-icon {
+    font-size: 24px;
+    color: #4a4a4a;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.navbar-icon:hover {
+    color: #263245;
+}
+
+/* Specific Icons */
+.search-icon::before {
+    content: '\1F50D'; /* Unicode for magnifying glass */
+}
+
+.heart-icon::before {
+    content: '\2665'; /* Unicode for heart symbol */
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .navbar-top {
+        justify-content: center;
+    }
+
+    .navbar-icon-left,
+    .navbar-icon-right {
+        display: none;
+    }
+
+    .navbar-menu-icon {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    .menu-icon::before {
+        content: '\2630'; /* Unicode for hamburger menu */
+        font-size: 24px;
+        color: #4a4a4a;
+    }
+
+    /* Ensure the menu is hidden by default */
+    .navbar-links-container {
+        display: none;
+    }
+
+    /* Only display when the menu is open */
+    .navbar-links-container.active {
+        display: block;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+    }
+
+    .navbar-links li {
+        padding: 10px 0;
+    }
+}

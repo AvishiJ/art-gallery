@@ -6,13 +6,9 @@ function Header() {
   return (
     <header>
         
-      <Link to='/' className='logo'>The Blogger</Link>
+      <Link to='/' className='logo'>The Art Gallery</Link>
       <nav>
-            <Link to='/create'>Create a new post</Link>
-            <a >Logout</a>
-
-            <Link to='/login'>Login</Link>
-            <Link to='/register'>Register</Link>
+           
       </nav>
     </header>
   )
