@@ -31,7 +31,7 @@ const Footer = () => {
         {/* Center Section - Subscribe */}
         <div className="flex flex-col space-y-4 w-full md:w-auto">
           <h5 className="font-semibold">Subscribe to our emails</h5>
-          <form className="flex items-center space-x-4">
+          <form className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
             <input 
               type="email" 
               placeholder="Email" 
@@ -43,9 +43,11 @@ const Footer = () => {
           </form>
         </div>
 
-        {/* Right Section - Logo and Mission */}
-        <div className="text-right w-full md:w-auto">
-          <h1 className="text-3xl font-semibold">Studio</h1>
+         {/* Right Section - Logo and Mission */}
+        <div className="text-center md:text-right w-full md:w-auto">
+          <h1 className="text-3xl text-gray-800" style={{ fontFamily: "'Dancing Script', cursive" }}>
+            Art Gallery
+          </h1>
           <p className="text-sm text-gray-500 mt-4">
             We curate affordably priced pieces from the most exciting up-and-coming artists.
           </p>
