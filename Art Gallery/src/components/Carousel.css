@@ -1,0 +1,105 @@
+.carousel-container {
+  position: relative;
+  width: 95%;
+  max-width: 95%;
+  padding: 0 10%; /* 10% padding on both sides */
+  margin: 0 auto; /* Center the carousel */
+}
+
+.carousel-wrapper {
+  position: relative;
+  height: 14rem; /* h-56 equivalent */
+  overflow: hidden;
+  /* border-radius: 0.5rem; rounded-lg equivalent */
+}
+
+@media (min-width: 768px) {
+  .carousel-wrapper {
+    height: 24rem; /* md:h-96 equivalent */
+  }
+}
+
+.carousel-item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.7s ease-in-out;
+  opacity: 0;
+}
+
+.carousel-item.active {
+  opacity: 1;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-indicators {
+  position: absolute;
+  z-index: 30;
+  bottom: 1.25rem; /* bottom-5 equivalent */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.75rem; /* space-x-3 equivalent */
+}
+
+.indicator {
+  width: 0.75rem; /* w-3 equivalent */
+  height: 0.75rem; /* h-3 equivalent */
+  border-radius: 9999px; /* rounded-full equivalent */
+  background-color: gray;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background-color: black;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%; /* Place the arrow at the top */
+  transform: translateY(-50%);
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: transparent; /* Remove the background circle */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-control:hover {
+  background-color: rgba(128, 128, 128, 0.2); /* Light grey background on hover */
+}
+
+.carousel-control.left {
+  left: 15%;
+}
+
+.carousel-control.right {
+  right: 15%;
+}
+
+.control-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.arrow-icon {
+  width: 2rem; /* Increase arrow size */
+  height: 2rem;
+  color: grey; /* Set arrow color to grey */
+}
+
+.arrow-icon path {
+  stroke: currentColor;
+}
